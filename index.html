@@ -1,1 +1,45 @@
+<html>
+    <head>
+        <style>
+        #divimg {
+            height: 282px;
+            width: 750px;
 
+            background: url(img/site_construcao.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .interna {
+            left:50%;
+            top:50%;
+            margin-left:-370px; /* Metade do valor da Largura */
+            margin-top:-130px; /* Metade da valor da Altura */
+            position:absolute;
+        }
+
+        .externa {
+            height: 332px;
+            width: 750px;
+        }
+
+        .text {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color:#231F20;
+            background-color: yellow;
+            font-size: 56px;
+            margin-left: 20px;
+        }
+
+        
+        </style>
+    </head>
+    <body>
+        <div class="interna externa">
+            <span class="text">Página</span>
+            <div id="divimg" class="interna">
+            </div>
+        </div>
+    </body>
+</html>

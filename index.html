@@ -13,9 +13,9 @@
         .interna {
             left:50%;
             top:50%;
-            margin-left:-370px; /* Metade do valor da Largura */
-            margin-top:-130px; /* Metade da valor da Altura */
-            position:absolute;
+            margin-left:-380px; /* Metade do valor da Largura */
+            margin-top:-140px; /* Metade da valor da Altura */
+            position: absolute;
         }
 
         .externa {
@@ -23,13 +23,30 @@
             width: 750px;
         }
 
+        .interna2 {
+            left:50%;
+            top:50%;
+            margin-left:-70px; /* Metade do valor da Largura */
+            margin-top:160px; /* Metade da valor da Altura */
+            position: absolute;
+        }
+
         .text {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: bold;
             color:#231F20;
-            background-color: yellow;
+            background-color: #FFDD00;
             font-size: 56px;
             margin-left: 20px;
+        }
+
+        .border {
+            border-bottom: 5px solid #585858;
+        }
+
+        .social {
+            margin: 10px;
+            color: white;
         }
 
         
@@ -38,7 +55,15 @@
     <body>
         <div class="interna externa">
             <span class="text">Página</span>
-            <div id="divimg" class="interna">
+            <div id="divimg" class="interna border">
+            </div>
+            <div class="interna2">
+                <a class="social" href="https://www.linkedin.com/in/bianor/">
+                    <img src="img/linkedin.png"/>
+                </a>
+                <a class="social" href="https://github.com/bianoraraujo">
+                    <img src="img/github.png"/>
+                </a>
             </div>
         </div>
     </body>

@@ -26,7 +26,7 @@
         .interna2 {
             left:50%;
             top:50%;
-            margin-left:-70px; /* Metade do valor da Largura */
+            margin-left:-90px; /* Metade do valor da Largura */
             margin-top:160px; /* Metade da valor da Altura */
             position: absolute;
         }
@@ -49,6 +49,32 @@
             color: white;
         }
 
+        .circle-link {
+            height: 60px;
+            width: 60px;
+            border-radius: 60px;
+            margin: 10px;
+            padding-left: 1px;
+            background-color: white;
+            border: 1px solid #eeeeee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: 1s ease-out;
+        }
+
+        .circle-link:hover {
+            transform: translateY(-0.25rem);
+            box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         
         </style>
     </head>
@@ -57,11 +83,11 @@
             <span class="text">Página</span>
             <div id="divimg" class="interna border">
             </div>
-            <div class="interna2">
-                <a class="social" href="https://www.linkedin.com/in/bianor/">
+            <div class="interna2 card-container">
+                <a class="circle-link" title="Linkedin" href="https://www.linkedin.com/in/bianor/" target="_blank" rel="noopener">
                     <img src="img/linkedin.png"/>
                 </a>
-                <a class="social" href="https://github.com/bianoraraujo">
+                <a class="circle-link" title="Linkedin" href="https://github.com/bianoraraujo" target="_blank" rel="noopener">
                     <img src="img/github.png"/>
                 </a>
             </div>
